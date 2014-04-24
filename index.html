@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Front-End Developer - Talk</title>
+
+    <meta name="description" content="Front-End talk">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Front-end Developer</h1>
+          <h3>(NÃO MAIS O MENINO DO HTML)</h3>
+          <p>
+            <small>Created by <a href="https://twitter.com/octavioamu">@octavioamu</a> / <a href="http://twitter.com/gabrihellmateus">@gabrihellmateus</a></small>
+          </p>
+        </section>
+
+        <section>
+          <section data-background-transition="slide">
+            <h2>O que é um Desenvolvedor Front-End?</h2>
+            <img src="/img/ladrillo-obreros1.jpg" height="300" alt="">
+            <p class="fragment">O profissional front-end é o encarregado de desenvolver a interface, ou seja, do lado do cliente.</p>
+            <aside class="notes">
+              <p>Front-end vem do desenvolvimento de software. Termo utilizado para determinar a parte visual para o cliente.</p>
+              <p>Trabalho em paralelo com dev e designer.</p>
+            </aside>
+          </section>
+
+          <section data-background-transition="slide">
+            <img class="fragment" src="/img/webmastador.jpg" alt="">
+            <p>Antigamente existia apenas o "webmaster" e "webdesigner". Os sites eram praticamente todos estáticos e os editores <strong>WYSIWYG</strong> <br> (Ex: FrontPage, Dreamweaver) eram os mais utilizados.</p>
+            <aside class="notes">
+              <p></p>
+            </aside>
+          </section>
+
+          <section data-background-transition="slide" data-background="/img/badcode.png">
+            <p class="fragment">Não existia preocupação com o código e sua manutenção, nem tecnologia adequada para tal fim.</p>
+          </section>
+
+          <section data-background-transition="slide" data-background="/img/badcode2.png">
+            <div class="fragment">
+              <p><strong>CSS</strong> e <strong>JS</strong> ficavam dentro do mesmo arquivo <strong>HTML</strong>.</p>
+              <p>Com as tecnologias ficando cada vez mais populares, foram criados diferentes cargos como por exemplo: webdesigner, programador PHP, entre outros e o desenvolver front-end.</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <img src="/img/tirinha761.png" height="800" alt="">
+
+        </section>
+
+        <section>
+          <h2>Responsabilidades do<br> Front-End Developer</h2>
+          <p>
+            O front-end trabalha do lado do cliente (client side) ou seja, diretamente no Browser.
+          </p>
+          <ul>
+            <li class="fragment">Estrutura dos elementos e semântica (HTML)</li>
+            <li class="fragment">Estilização dos elementos (CSS)</li>
+            <li class="fragment">Encarregado de criar a interação com o usuário (javascript e CSS)</li>
+            <li class="fragment">Cross-Browsing</li>
+            <li class="fragment">Mobile</li>
+            <li class="fragment">Design Responsivo, Multi-device</li>
+            <li class="fragment">Otimização da performance (tempo de carregamento e renderização, Progressive Enhancement)</li>
+            <li class="fragment">Otimização do código para facilitar a indexação (SEO, search engine optimization)</li>
+            <li class="fragment">Acessibilidade / WAI-ARIA</li>
+          </ul>
+        </section>
+
+        <section >
+          <h3>O que o Front-End Developer</h3>
+          <h2 class="fragment">NÃO FAZ</h2>
+          <ul>
+            <li class="fragment">Deploy para produção</li>
+            <li class="fragment">Criar Layout</li>
+            <li class="fragment">Trabalhar no Server-side, banco de dados</li>
+            <li class="fragment">Usar Internet Explorer</li>
+          </ul>
+          <img src="/img/no.gif" width="100%" alt="">
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
