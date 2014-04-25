@@ -77,19 +77,46 @@
         </section>
 
         <section>
-          <h2>Responsabilidades do<br> Front-End Developer</h2>
-          <p>O front-end trabalha do lado do cliente (client side) ou seja, diretamente no Browser.</p>
-          <ul>
-            <li class="fragment">Estrutura dos elementos e semântica (HTML)</li>
-            <li class="fragment">Estilização dos elementos (CSS)</li>
-            <li class="fragment">Encarregado de criar a interação com o usuário (javascript e CSS)</li>
-            <li class="fragment">Cross-Browsing</li>
-            <li class="fragment">Mobile</li>
-            <li class="fragment">Design Responsivo, Multi-device</li>
-            <li class="fragment">Otimização da performance (tempo de carregamento e renderização, Progressive Enhancement)</li>
-            <li class="fragment">Otimização do código para facilitar a indexação (SEO, search engine optimization)</li>
-            <li class="fragment">Acessibilidade / WAI-ARIA</li>
-          </ul>
+          <section>
+            <h2>Responsabilidades do<br> Front-End Developer</h2>
+            <p>O front-end trabalha do lado do cliente (client side) ou seja, diretamente no Browser.</p>
+            <ul>
+              <li class="fragment">Estrutura dos elementos e semântica (HTML)</li>
+              <li class="fragment">Estilização dos elementos (CSS)</li>
+              <li class="fragment">Encarregado de criar a interação com o usuário (javascript e CSS)</li>
+              <li class="fragment">Cross-Browsing</li>
+              <li class="fragment">Mobile</li>
+              <li class="fragment">Design Responsivo, Multi-device</li>
+              <li class="fragment">Otimização da performance (tempo de carregamento e renderização, Progressive Enhancement)</li>
+              <li class="fragment">Otimização do código para facilitar a indexação (SEO, search engine optimization)</li>
+              <li class="fragment">Acessibilidade / WAI-ARIA / Microdados, microformatos, RDFa</li>
+            </ul>
+          </section>
+
+          <section>
+            <pre>
+              <code>
+<div itemscope itemtype="http://data-vocabulary.org/Review">
+  <span itemprop="itemreviewed" itemscope itemtype="http://data-vocabulary.org/Organization">
+    <span itemprop="name">L'Amourita Pizza</span>
+    Ubicada en
+    <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+      <span itemprop="street-address">Av. de España 23</span>,
+      <span itemprop="locality">Alcobendas</span>,
+      <span itemprop="region">Madrid</span>
+    </span>
+    <a href="http://pizza.example.com" itemprop="url">http://pizza.example.com</a>
+  </span>
+  Opinión de <span itemprop="reviewer">Roberto Sánchez</span> Puntuación:
+  <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
+    <span itemprop="value">9</span>/
+    <span itemprop="best">10</span> (excelente)
+  </span>
+</div>
+              </code>
+            </pre>
+            <img src="img/microformat.png" alt="">
+          </section>
         </section>
 
         <section >
