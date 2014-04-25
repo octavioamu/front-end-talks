@@ -1889,3 +1889,6 @@ body {
 .half-visible {
 	opacity: 0.5;
 }
+
+
+.reveal .yellow-text { color: #E7AD52; }
