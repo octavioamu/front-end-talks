@@ -35,26 +35,31 @@
     <div class="reveal">
       <div class="slides">
         <section>
+          <h1>Workflow</h1>
+          <h2 class="yellow-text">Ferramentas que usamos</h2>
+          <div class="fragment">
+            <ul>
+              <li class="fragment yellow-text"><h3>Pré processador CSS</h3></li>
+              <li class="fragment yellow-text"><h3>Automatizador de tarefas</h3></li>
+              <li class="fragment yellow-text"><h3>Chrome Developer Tools</h3></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
           <section>
-            <h1>Workflow</h1>
-            <h2>As ferramentas que usamos</h2>
-            <div class="fragment">
-              <h3>Pré processador CSS: <span class="yellow-text">LESS</span></h3>
-              <h3>Automatizador de tarefas: <span class="yellow-text">GRUNT JS</span></h3>
-            </div>
-          </section>
-           <section>
             <div>
               <img class="no-border" src="img/less-small.png" alt="Pré processador CSS: LESS">
             </div>
-            <h3>Pré processador de CSS. <br>Ele dá um poder maior extendendo a linguagem e adicionando vários recursos:</h3>
+            <h2>Pré processador de CSS.</span></h2>
+            <h4>Ele dá um poder maior extendendo a linguagem e adicionando vários recursos:</h4>
             <ul>
-              <li class="fragment">Variáveis</li>
-              <li class="fragment">Funções</li>
-              <li class="fragment">Mixins</li>
-              <li class="fragment">Manutenção do código</li>
-              <li class="fragment">Extensão do código</li>
-              <li class="fragment">Facilidade em criação de temas</li>
+              <li class="fragment yellow-text"><span class="white-text">Variáveis</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Funções</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Mixins</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Manutenção do código</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Extensão do código</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Facilidade em criação de temas</span></li>
             </ul>
           </section>
           <section>
@@ -63,26 +68,38 @@
             </div>
             <img src="img/less-code.png" alt="Pré processador CSS: LESS">
           </section>
+        </section>
+
+        <section>
           <section>
             <div>
               <img class="no-border" src="img/grunt-logo.png" alt="Grunt run tasker"  width="150">
             </div>
-            <h3>O Grunt tem como objetivo automatizar suas tarefas</h3>
+            <h2>Automatizador de tarefas</h2>
+            <h4>O Grunt tem como objetivo agilizar o workflow automatizando suas tarefas</h4>
             <ul>
-              <li class="fragment">Concatenção de Javascript,</li>
-              <li class="fragment">Otimização de imagens</li>
-              <li class="fragment">Compilação de arquivos LESS/SASS</li>
-              <li class="fragment">Testes unitários</li>
-              <li class="fragment">Validação de código</li>
-              <li class="fragment">Minificação de arquivos</li>
-              <li class="fragment">e muitas outras</li>
+              <li class="fragment yellow-text"><span class="white-text">Concatenção de Javascript</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Otimização de imagens</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Compilação de arquivos LESS/SASS</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Testes unitários</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Validação de código</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Minificação de arquivos</span></li>
+              <li class="fragment yellow-text"><span class="white-text">e muitas outras...</span></li>
             </ul>
           </section>
           <section>
             <div>
               <img class="no-border" src="img/grunt-logo.png" alt="Grunt run tasker"  width="150">
             </div>
+            <h3>Arquivo de configuração Gruntfile.js</h3>
             <img src="img/grunt-code.png" alt="Grunt run tasker">
+          </section>
+          <section>
+            <div>
+              <img class="no-border" src="img/grunt-logo.png" alt="Grunt run tasker"  width="150">
+            </div>
+            <h3>Configuração da tarefa</h3>
+            <img src="img/grunt-task.png" alt="Grunt run tasker">
           </section>
           <section>
             <div>
@@ -91,6 +108,44 @@
             <h3>Tarefas sendo executadas</h3>
             <img src="img/grunt-terminal.png" alt="Grunt run tasker">
           </section>
+          <section>
+            <div>
+              <img class="no-border" src="img/grunt-logo.png" alt="Grunt run tasker"  width="150">
+            </div>
+            <h3>O que muda ao projeto Rails?</h3>
+            <h2 class="fragment yellow-text">Nada!</h2>
+            <div class="fragment">
+              <p>Adicionamos o <strong class="yellow-text">diretório grunt</strong> com os arquivos de configuração dentro do <strong class="yellow-text">diretório app</strong>. De lá executamos as tarefas.</p>
+            </div>
+            <div class="fragment">
+              <p>Os arquivos gerados pelas tarefas são adicionados aos diretórios de seu contexto.</p>
+              <p><strong>Exemplo:</strong> exportamos o arquivo <strong class="yellow-text">.css</strong> e <strong class="yellow-text">.js</strong> ao diretório de <strong class="yellow-text">stylesheets</strong> e <strong class="yellow-text">javascripts</strong> respectivamente. Com isso o workflow do Desenvolvedor Rails não é alterado.</p>
+            </div>
+          </section>
+         </section>
+
+        <section>
+          <section>
+            <div>
+              <img class="no-border" src="img/developers-tools-logo.svg" alt="Chrome Developers Tools">
+            </div>
+            <h2>Chrome Developer Tools</h2>
+            <p>Conjunto de ferramentas para auxiliar o desenvolvimento e depuração do projeto.</p>
+            <ul>
+              <li class="fragment yellow-text"><span class="white-text">Inspeção de elementos e estilos do DOM</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Gráfico de performance detalhando os arquivos carregados</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Sugestões para otimizar e diminuir o tempo de carregamento</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Visão global dos arquivos renderizados: scripts, estilos, repainting...</span></li>
+              <li class="fragment yellow-text"><span class="white-text">Console javascript para depuração</span></li>
+            </ul>
+          </section>
+          <section>
+            <div>
+              <img class="no-border" src="img/developers-tools-logo.svg" alt="Chrome Developers Tools">
+            </div>
+            <div>
+              <img class="no-border" src="img/chrome-developers-tools.png" alt="Chrome Developers Tools">
+            </div>
         </section>
       </div>
     </div>
