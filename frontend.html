@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Front-End Developer - Talk</title>
+    <meta name="description" content="Front-End talk">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" type="image/x-icon" href="https://github.global.ssl.fastly.net/favicon.ico">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Front-end Developer</h1>
+          <h3>(NÃO MAIS O MENINO DO HTML)</h3>
+          <p>
+            <small>Created by <a href="https://twitter.com/octavioamu">@octavioamu</a> / <a href="http://twitter.com/gabrihellmateus">@gabrihellmateus</a></small>
+          </p>
+        </section>
+
+        <section>
+          <section data-background-transition="slide">
+            <h2>O que é um <span class="yellow-text">Desenvolvedor Front-End</span>?</h2>
+            <img src="img/ladrillo-obreros1.jpg" height="300" alt="">
+            <p class="fragment">O profissional Front-end é o encarregado de desenvolver a interface do usuário, ou seja, o client-side.</p>
+            <aside class="notes">
+              <p>Front-end vem do desenvolvimento de software. Termo utilizado para determinar a parte visual para o cliente.</p>
+              <p>Trabalho em paralelo com dev e designer.</p>
+            </aside>
+          </section>
+
+          <section data-background-transition="slide">
+            <img class="fragment" src="img/webmastador.jpg" alt="">
+            <p>Antigamente existia apenas o "webmaster" e "webdesigner". Os sites eram praticamente todos estáticos e os editores <strong>WYSIWYG</strong> <br> (Ex: FrontPage, Dreamweaver) eram os mais utilizados.</p>
+          </section>
+
+          <section data-background-transition="slide" data-background="img/badcode.png">
+            <p class="fragment">Não existia preocupação com o código e sua manutenção, nem tecnologia adequada para tal fim.</p>
+          </section>
+
+          <section data-background-transition="slide" data-background="img/badcode2.png">
+            <div class="fragment">
+              <p><strong>CSS</strong> e <strong>Javascript</strong> ficavam dentro do mesmo arquivo <strong>HTML</strong>.</p>
+              <p>As tecnologias ficaram cada vez mais populares e os cargos foram dívidos:
+              <div class="bg-opaque-black">
+                <ul>
+                  <li>Webdesigner</li>
+                  <li>Programador PHP</li>
+                  <li class="yellow-text">Desenvolver Front-end</li>
+                  <li>Entre outros</li>
+                  <br>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <img src="img/tirinha761.png" height="800" alt="Tirinha">
+        </section>
+
+        <section>
+          <section>
+            <h2>Responsabilidades do<br> <span class="yellow-text">Desenvolvedor Front-End</span></h2>
+          </section>
+
+          <section>
+            <h3>Estrutura dos elementos e semântica (<span class="yellow-text">HTML</span>)</h3>
+            <img src="img/html.png" alt="Estrutura dos elementos e semântica (HTML)">
+          </section>
+
+          <section>
+            <h3>Estilização dos elementos (<span class="yellow-text">CSS</span>)</h3>
+            <pre>
+              <code>
+/* GLOBAL STYLES
+*********************************************/
+body {
+  background: #111111;
+  background-color: #111111; }
+
+.reveal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: #eeeeee; }
+
+/* HEADERS
+*********************************************/
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h3>Interação com o usuário (<span class="yellow-text">Javascript e CSS</span>)</h3>
+            <img src="" alt="Encarregado de criar a interação com o usuário (Javascript e CSS)">
+          </section>
+
+          <section>
+            <h3>Cross-Browsing <br>(<span class="yellow-text">Progressive Enhancement <br>Graceful Degradation</span>)</h3>
+            <img class="no-border" src="img/browser-logos.png" alt="Cross Browsing">
+          </section>
+
+          <section>
+            <h3>Mobile</h3>
+            <img src="img/mobile.jpg" alt="Cross Browsing">
+          </section>
+
+          <section>
+            <h3>Design Responsivo</h3>
+            <img src="img/responsive-design.jpeg" alt="Design Responsivo, Multi-device">
+          </section>
+
+          <section>
+            <h3>Otimização da performance, tempo de carregamento e renderização</h3>
+            <img src="img/network-timeline.png" alt="Otimização da performance, tempo de carregamento e renderização (Progressive Enhancement)">
+          </section>
+
+          <section>
+            <h3>Otimização do código para facilitar a indexação (<span class="yellow-text">SEO</span>)</h3>
+            <img src="img/seo.jpg " alt="Otimização do código para facilitar a indexação (SEO)">
+          </section>
+
+          <section>
+            <h3>Acessibilidade (<span class="yellow-text">WAI-ARIA, Microdados, Microformatos, RDFa</span>)</h3>
+            <pre>
+              <code>
+<div itemscope itemtype="http://data-vocabulary.org/Review">
+  <span itemprop="itemreviewed" itemscope itemtype="http://data-vocabulary.org/Organization">
+    <span itemprop="name">L'Amourita Pizza</span>
+    Ubicada en
+    <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+      <span itemprop="street-address">Av. de España 23</span>,
+      <span itemprop="locality">Alcobendas</span>,
+      <span itemprop="region">Madrid</span>
+    </span>
+    <a href="http://pizza.example.com" itemprop="url">http://pizza.example.com</a>
+  </span>
+  Opinión de <span itemprop="reviewer">Roberto Sánchez</span> Puntuación:
+  <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
+    <span itemprop="value">9</span>/
+    <span itemprop="best">10</span> (excelente)
+  </span>
+</div>
+              </code>
+            </pre>
+            <img src="img/microformat.png" alt="">
+          </section>
+        </section>
+        <section>
+          <h3>O que o Front-End Developer</h3>
+          <h2 class="fragment yellow-text">NÃO FAZ</h2>
+          <ul>
+            <li class="fragment">Deploy para produção</li>
+            <li class="fragment">Criar Layout</li>
+            <li class="fragment">Trabalhar no Server-side, banco de dados</li>
+            <li class="fragment">Usar o <span class="yellow-text">Internet Explorer</span></li>
+          </ul>
+          <a href="workflow.html"><img src="img/no.gif" width="100%" alt=""></a>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
