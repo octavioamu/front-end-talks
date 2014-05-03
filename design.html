@@ -34,7 +34,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section class="bg-opaque-black">
           <h1>Designers <span class="heart clear">❤</span> Front-ends</h1>
           <h3>A combinação perfeita </h3>
           <p>
@@ -42,10 +42,95 @@
           </p>
         </section>
         <section>
+          <section class="bg-opaque-black">
+            <h2>Recortar o Layout</h2>
+            <h3 class="fragment">Não existe mais</h3>
+            <ul>
+              <li>CSS3</li>
+              <li>Webfonts</li>
+              <li>SVG</li>
+            </ul>
+          </section>
 
+          <section class="bg-opaque-black">
+            <h2>Fontes / Tipografias</h2>
+            <h3>Os borwsers não entendem de design</h3>
+            <img src="img/render.jpg" alt="">
+            <aside class="notes">
+              <p>Antigamente poucas opções</p>
+            </aside>
+          </section>
+          <section class="bg-opaque-black">
+            <h3>Do PSD ao Browser</h3>
+            <ul>
+              <li>Unidades em PX enteros nunca decimais ex: 10.58px</li>
+              <li>Quebra de linha em blocos de texto (Enter ↵ no meio de um frase)</li>
+              <li>Aplicar bold/italic da fonte e não do photoshop (no browser será diferente)</li>
+              <li>Fontface dos OS</li>
+              <li>Line Height (linha de inicio alinhada com elemento respeita o line height)</li>
+              <li>Colocar junto o PSD o arquivo da fonte</li>
+              <li>Qual a fonte sans e serif alternativa de sistema caso não carrege a utilizada?</li>
+              <li>Criar padrões ex: Titulos Camel-case ou não</li>
+            </ul>
+          </section>
+          <section class="bg-opaque-black">
+            <ul>
+              <li>Uso de fontes de SO</li>
+              <li>uso de varias fontes não padrão</li>
+            </ul>
 
+          </section>
+          <section class="bg-opaque-black">
+            <h3>Usando Gyphs ❤</h3>
+            <h4>⌨ ⌘ ✆ ☎ ☂ ☔ ♿ ♻ ✿ ♡ ★ ✌  ☯</h4>
+            <p>Algumas ferramentas:</p>
+              <a target="_blank" href="http://www.photokaboom.com/photography/learn/Photoshop_Elements/type_tool/1_characters_symbols.htm#Mac">Como utilizar caráteres especias no photoshop</a>
+              <a target="_blank" href="http://copypastecharacter.com/">http://copypastecharacter.com/</a> <br>
+              <a target="_blank" href="http://amp-what.com/">http://amp-what.com/</a> <br>
+              <a target="_blank" href="http://panmental.de/symbols/">http://panmental.de/symbols/</a> <br>
+          </section>
+
+          <section>
+            <h3>Ligaduras</h3>
+            <img src="img/ligatures.png" alt="">
+            <img src="img/ligatures2.png" alt="">
+            <p>
+              <a target="_blank" href="http://meyerweb.com/eric/css/tests/css3/show.php?p=font-variant-ligatures">CSS Ligatures</a> <br>
+              <a target="_blank" href="http://blog.fontdeck.com/post/15777165734/opentype-1">Using OpenType font features with CSS 3</a> | <a target="_blank" href="http://clagnut.com/sandbox/opentype/ligatures">Exemplo ⇗</a> <br>
+              <a href="http://dev.w3.org/csswg/css-fonts-3/">CSS Fonts Module Level 3</a>
+            </p>
+          </section>
         </section>
         <section>
+http://photoshopetiquette.com/
+
+Bordas estao dentro do grid
+
+Imagens
+
+Não multiply
+Paths
+recorte (smart objects)
+Png vs Gif
+Minficação otimização img
+estrutura (nomes ,cores, ordem)
+bootstrap manter padrao
+Favicon
+Padrão de fundo manter o patttern
+
+Icones
+Svg art boards names icons ingles
+tamanhos proporcionais.
+
+http://icomoon.io/#docs/font-metrics
+
+
+
+Forms
+-erros de formulario
+
+
+http://sixrevisions.com/web_design/collaboration-tips-for-designers-working-with-developers/
           sd
         </section>
       </div>
@@ -68,8 +153,8 @@
         // Parallax scrolling
          parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
          //parallaxBackgroundImage: 'img/duck.jpg',
-         parallaxBackgroundImage: 'img/road.jpg',
-         parallaxBackgroundSize: '2000px 1000px',
+         parallaxBackgroundImage: 'img/turn.jpg',
+         parallaxBackgroundSize: '2000px 1300px',
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
