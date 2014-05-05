@@ -1895,9 +1895,13 @@ body {
 .reveal .yellow-text { color: #E7AD52; }
 .reveal .white-text { color: #fff; }
 
-.heart {
-	color: red;
+.heart { color: red; }
+.clear { display: block; }
+
+.floated-logo {
+	float: left;
+	width: 15%;
+	margin: 0 0 0 15%;
 }
-.clear {
-	display: block;
-}
+
+.backgrounds { -webkit-filter: blur(2px); }
