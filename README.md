@@ -1,24 +1,9 @@
-front-end-talks
+Front End talks
 ===============
 
-Talks about front-end developer
+Talks about front end development
 
-#Workshop RJ
-
-
-###Apresentações
-- Front-end (Não mais o menino do html) **Todos**
-- Grunt, front-end Workflow **Devs & Designers**
-- designers e front-end **Designers**
-- Design Responsivo **Todos**
-
-
-##Front-end (Não mais o menino do html) *Todos*
-- O que é?
-- De onde vem
-- Tipos de front-end
-- Áreas / funções
-- Formas de trabalho e ferramentas
-- Preocupações
-
-
+##Table of contents
+- Front End Developer: concept, history and responsibilities
+- Front End Developer Workflow: tools
+- Designers and Front End Developers: best pratices
