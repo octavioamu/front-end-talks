@@ -41,17 +41,68 @@
             <small>Created by <a href="https://twitter.com/octavioamu">@octavioamu</a> / <a href="http://twitter.com/gabrihellmateus">@gabrihellmateus</a></small>
           </p>
         </section>
-        <section>
-          <section class="bg-opaque-black">
-            <h2>Recortar o Layout</h2>
-            <h3 class="fragment">Não existe mais</h3>
-            <ul>
-              <li>CSS3</li>
-              <li>Webfonts</li>
-              <li>SVG</li>
-            </ul>
-          </section>
 
+        <section class="bg-opaque-black">
+          <h2>Recortar o Layout</h2>
+          <h3 class="fragment yellow-text">Não existe mais</h3>
+          <ul>
+            <li>CSS3</li>
+            <li>Webfonts</li>
+            <li>SVG</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h2>Práticas do designer que otimizam o desenvolvimento front-end</h2>
+            <p>
+              Compilação das melhores práticas de criação de PSD. <a href="http://photoshopetiquette.com/">photoshopetiquette.com</a>
+            </p>
+          </section>
+          <section class="bg-opaque-black">
+            <h3>Uso de grid</h3>
+            <p class="yellow-text">Grids são as estruturas do layout e permitem a criação de padrões visuais.</p>
+            <ul>
+              <li>Sempre usar grid</li>
+              <li>Respeitar o grid (bordas contam dentro do grid)</li>
+              <li>Elementos fora da linha de grid forçam a criação de estilos específicos</li>
+            </ul>
+            <img src="img/grid-follow.png" alt="">
+          </section>
+          <section class="bg-opaque-black">
+            <h3>Imagens</h3>
+            <ul>
+              <li>Não usar multiply para ocultar o fundo em elementos</li>
+              <li>Usar vetores sempre que for possível</li>
+              <li>Utilizar smart objects com precaução</li>
+              <li>Utilizar Layers comps para os diferentes states (ex. dropdown)</li>
+              <li>Organização de layers e uso de cores</li>
+              <li>Criar guia de estilos e segui-la</li>
+              <li>Fundos e patterns</li>
+            </ul>
+            <img src="img/pattern.jpg" alt="">
+          </section>
+          <section class="bg-opaque-black">
+            <h3>Icones</h3>
+              <p class="yellow-text">A tendência é criar uma fonte com o set de icones utilizado no projeto, permitindo assim alteração de cores e tamanhos sem perdas. Isto só é possível seguindo alguns pontos:</p>
+              <ul>
+                <li>Icones do mesmo tamanho (depois poderão ser alterados igual que tipografía) <a target="_blank" href="http://icomoon.io/#docs/font-metrics">+ info</a></li>
+                <li>Arquivo Illustrator com todo o set de icones, cada um num artboard diferente e do mesmo tamanho</li>
+                <li>Pixel perfection, não existe meio pixel</li>
+              </ul>
+<!--             Svg art boards names icons ingles
+tamanhos proporcionais. -->
+          </section>
+          <section>
+            <ul>
+              <li>Excluir layers desnecessários</li>
+              <li>Não esquecer o favicon (ou psd quadrado com a imagem, no mínimo 260x260)</li>
+              <li>Não esquecer os estilos e comportamentos da validação de formulário</li>
+            </ul>
+
+          </section>
+        </section>
+
+        <section>
           <section class="bg-opaque-black">
             <h2>Fontes / Tipografias</h2>
             <h3>Os borwsers não entendem de design</h3>
@@ -71,6 +122,7 @@
               <li>Colocar junto o PSD o arquivo da fonte</li>
               <li>Qual a fonte sans e serif alternativa de sistema caso não carrege a utilizada?</li>
               <li>Criar padrões ex: Titulos Camel-case ou não</li>
+              <li>Usar webfonts, preferencialmente <a target="_blank" href="https://www.google.com/fonts">google fonts</a>.</li>
             </ul>
           </section>
           <section class="bg-opaque-black">
@@ -106,10 +158,9 @@ http://photoshopetiquette.com/
 
 Bordas estao dentro do grid
 
-Imagens
+
 
 Não multiply
-Paths
 recorte (smart objects)
 Png vs Gif
 Minficação otimização img
@@ -154,7 +205,7 @@ http://sixrevisions.com/web_design/collaboration-tips-for-designers-working-with
          parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
          //parallaxBackgroundImage: 'img/duck.jpg',
          parallaxBackgroundImage: 'img/turn.jpg',
-         parallaxBackgroundSize: '2000px 1300px',
+         parallaxBackgroundSize: '1900px 1300px',
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
