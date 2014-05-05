@@ -149,29 +149,122 @@ body {
           </section>
 
           <section>
-            <h3>Acessibilidade WCAG (<span class="yellow-text">WAI, Microdados, Microformatos, RDFa</span>)</h3>
+            <h3>Acessibilidade WCAG (<span class="yellow-text">WAI</span>)</h3>
+            <p>"...prática inclusiva de fazer websites que possam ser utilizados por todas as pessoas que tenham deficiência ou não. Quando os sites são corretamente concebidos, desenvolvidos e editados, todos os usuários podem ter igual acesso à informação e funcionalidade."</p>
+<pre>
+  <code>
+<ul role="tree" aria-labelledby="treelabel" aria-activedescendant="ex_id" tabindex="0">
+  <li role="treeitem" aria-expanded="true">Minerals
+    <ul role="group">
+      <li role="treeitem">Zinc</li>
+      <li role="treeitem" aria-expanded="false">Gold
+        <ul role="group">
+          <li role="treeitem">Yellow Gold</li>
+          <li role="treeitem">White Gold</li>
+        </ul>
+      </li>
+      <li role="treeitem">Silver</li>
+    </ul>
+  </li>
+  <li role="treeitem" aria-expanded="true">Vegetables
+    <ul role="group">
+      <li role="treeitem">Carrot</li>
+      <li role="treeitem">Tomato</li>
+    </ul>
+  </li>
+</ul>
+  </code>
+</pre>
+          </section>
+
+          <section>
+            <h3>Structured data</h3>
+            <h4><span class="yellow-text">Microformats, Microdata, RDFa</span></h4>
+          </section>
+
+          <section>
+            <h3>Microformats</h3>
+
+            <p>Convensão para descrever tipos de informação. Ex: Informação de contato</p>
             <pre>
               <code>
-<div itemscope itemtype="http://data-vocabulary.org/Review">
-  <span itemprop="itemreviewed" itemscope itemtype="http://data-vocabulary.org/Organization">
-    <span itemprop="name">L'Amourita Pizza</span>
-    Ubicada en
-    <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-      <span itemprop="street-address">Av. de España 23</span>,
-      <span itemprop="locality">Alcobendas</span>,
-      <span itemprop="region">Madrid</span>
-    </span>
-    <a href="http://pizza.example.com" itemprop="url">http://pizza.example.com</a>
-  </span>
-  Opinión de <span itemprop="reviewer">Roberto Sánchez</span> Puntuación:
-  <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
-    <span itemprop="value">9</span>/
-    <span itemprop="best">10</span> (excelente)
-  </span>
+<div>
+   <img src="www.example.com/bobsmith.jpg" />
+   <strong>Bob Smith</strong>
+   Senior editor at ACME Reviews
+   200 Main St
+   Desertville, AZ 12345
+</div>
+              </code>
+            </pre>
+            <p>Com microformato hCard:</p>
+            <pre>
+              <code>
+<div class="vcard">
+   <img class="photo" src="www.example.com/bobsmith.jpg" />
+   <strong class="fn">Bob Smith</strong>
+   <span class="title">Senior editor</span> at <span class="org">ACME Reviews</span>
+   <span class="adr">
+      <span class="street-address">200 Main St</span>
+      <span class="locality">Desertville</span>, <span class="region">AZ</span>
+      <span class="postal-code">12345</span>
+   </span>
+</div>
+              </code>
+            </pre>
+            <small>Fonte: <a href="https://support.google.com/webmasters/answer/146897?hl=en">https://support.google.com/webmasters/answer/146897?hl=en</a></small>
+          </section>
+
+          <section>
+            <h3>Microdata</h3>
+            <p>Rich snippets utlizando vocabulario que Google, Yahoo e Microsoft conseguem entender <a href="http://www.schema.org/">www.schema.org/</a></p>
+            <pre>
+              <code>
+<div>
+  My name is Bob Smith but people call me Smithy. Here is my home page:
+  <a href="http://www.example.com">www.example.com</a>
+  I live in Albuquerque, NM and work as an engineer at ACME Corp.
+</div>
+              </code>
+            </pre>
+            <pre>
+              <code>
+<div itemscope itemtype="http://data-vocabulary.org/Person">
+  My name is <span itemprop="name">Bob Smith</span>
+  but people call me <span itemprop="nickname">Smithy</span>.
+  Here is my home page:
+  <a href="http://www.example.com" itemprop="url">www.example.com</a>
+  I live in Albuquerque, NM and work as an <span itemprop="title">engineer</span>
+  at <span itemprop="affiliation">ACME Corp</span>.
 </div>
               </code>
             </pre>
             <img src="img/microformat.png" alt="">
+          </section>
+          <section>
+          <h3>RDFa</h3>
+            <pre>
+              <code>
+<div>
+My name is Bob Smith but people call me Smithy. Here is my home page:
+<a href="http://www.example.com">www.example.com</a>.
+I live in Albuquerque, NM and work as an engineer at ACME Corp.
+</div>
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+  My name is <span property="v:name">Bob Smith</span>,
+  but people call me <span property="v:nickname">Smithy</span>.
+  Here is my homepage:
+  <a href="http://www.example.com" rel="v:url">www.example.com</a>.
+  I live in Albuquerque, NM and work as an <span property="v:title">engineer</span>
+  at <span property="v:affiliation">ACME Corp</span>.
+</div>
+              </code>
+            </pre>
           </section>
         </section>
         <section>
